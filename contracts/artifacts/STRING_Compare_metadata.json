@@ -1,0 +1,180 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "s1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "s2",
+						"type": "string"
+					}
+				],
+				"name": "compare1",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "s1",
+						"type": "string"
+					}
+				],
+				"name": "compare2",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_string",
+						"type": "string"
+					}
+				],
+				"name": "keccak1",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_string",
+						"type": "string"
+					}
+				],
+				"name": "keccak2",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_string1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_string2",
+						"type": "string"
+					}
+				],
+				"name": "stringCompare2",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_string1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_string2",
+						"type": "string"
+					}
+				],
+				"name": "stringCompare3",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/99_test.sol": "STRING_Compare"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/99_test.sol": {
+			"keccak256": "0xc501929cf0732ecfc724eb2c4c1bde7192d449f17ae6eb6a7bbc5f7ca8c55707",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3774a4c1e6485de443fc3632515ed79b2ecfb08e97d155085c6873221a015e0d",
+				"dweb:/ipfs/QmTGmMRRi9SD53gt8iduC5WzuKd48wVYuNHG8jgcpubZ6h"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "DA",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/99_test.sol": "DynamicArray"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/99_test.sol": {
+			"keccak256": "0xc501929cf0732ecfc724eb2c4c1bde7192d449f17ae6eb6a7bbc5f7ca8c55707",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3774a4c1e6485de443fc3632515ed79b2ecfb08e97d155085c6873221a015e0d",
+				"dweb:/ipfs/QmTGmMRRi9SD53gt8iduC5WzuKd48wVYuNHG8jgcpubZ6h"
+			]
+		}
+	},
+	"version": 1
+}
