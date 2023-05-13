@@ -225,27 +225,64 @@ contract codingtestAnswer {
     }
 
     // 보충반 조회 기능 - F 학점을 받은 학생들의 숫자와 그 전체 정보를 반환
-    // function FClass() public view returns(Student[] memory) {
-    //     uint num;       // F 학점 학생수
+    function FClass() public view returns(Student[] memory) {
+        uint num;       // F 학점 학생수
         
-    //     for(uint i = 0; i < students.length; i++) {
-    //         if(keccak256(bytes(students[i].credit)) == keccak256(bytes("F"))) {
-    //             num++;
-    //         }
-    //     }
+        for(uint i = 0; i < students.length; i++) {
+            if(keccak256(bytes(students[i].credit)) == keccak256(bytes("F"))) {
+                num++;
+            }
+        }
 
-    //     Student[] memory F_students = new Student[](num);       // num만틈의 array
+        Student[] memory F_Storage = new Student[](num);       // num만틈의 array
 
-    //     uint _num;
-    //     for(uint i = 0; i < students.length; i++) {
-    //         if(keccak256(bytes(students[i].credit)) == keccak256(bytes("F"))) {
-    //             F_students[_num] = students[i];
-    //             _num++;
-    //         }
-    //     }
-    // }
+        uint _num;
+        for(uint i = 0; i < students.length; i++) {
+            if(keccak256(bytes(students[i].credit)) == keccak256(bytes("F"))) {
+                F_Storage[_num] = students[i];
+                _num++;
+            }
+        }
+
+        return F_Storage;
+    }
+
+    function FClass1() public view returns(uint, uint, Student[] memory) {
+        Student[] memory F_Students = students;
+        Student[] memory F_Storage;
+
+        uint count;
+
+        for(uint i = 0; i < students.length; i++) {
+            if(keccak256(bytes(students[i].credit)) == keccak256(bytes("F"))) {
+                count++;
+                F_Students[count-1] = students[i];
+                F_Storage = new Student[](count);
+                for(uint j = 0; j < count; j++) {
+                    F_Storage[j] = F_Students[j];
+                }
+            }
+        }
+        return (F_Storage.length, count, F_Storage);
+    }
 
     // S반 조회 기능 - 가장 점수가 높은 학생 4명을 S반으로 설정하는데, 이 학생들의 전체 정보를 반환하는 기능 (S반은 4명으로 한정)
+    function SClass() public view returns(Student[] memory) {
+        Student[] memory S_Students = students;
+        Student[] memory S_Class = new Student[](4);
+
+        for(uint j = 1; j < S_Students.length; j++) {
+            for(uint i = 0; i < j; i++) {
+                if(S_Students[i].score < S_Students[j].score) {
+                    (S_Students[i], S_Students[j]) = (S_Students[j], S_Students[i]);
+                }
+            }
+        }
+        for(uint i = 0; i < 4; i++) {
+            S_Class[i] = S_Students[i];
+        }
+        return S_Class;
+    }
 }
 
 contract STRING_Compare {

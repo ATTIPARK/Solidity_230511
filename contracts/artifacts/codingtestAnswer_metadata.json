@@ -7,6 +7,136 @@
 		"abi": [
 			{
 				"inputs": [],
+				"name": "FClass",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "number",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "score",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "credit",
+								"type": "string"
+							},
+							{
+								"internalType": "string[]",
+								"name": "classes",
+								"type": "string[]"
+							}
+						],
+						"internalType": "struct codingtestAnswer.Student[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "FClass1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "number",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "score",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "credit",
+								"type": "string"
+							},
+							{
+								"internalType": "string[]",
+								"name": "classes",
+								"type": "string[]"
+							}
+						],
+						"internalType": "struct codingtestAnswer.Student[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "SClass",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "number",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "score",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "credit",
+								"type": "string"
+							},
+							{
+								"internalType": "string[]",
+								"name": "classes",
+								"type": "string[]"
+							}
+						],
+						"internalType": "struct codingtestAnswer.Student[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "getAllStudents",
 				"outputs": [
 					{
@@ -266,11 +396,11 @@
 	},
 	"sources": {
 		"contracts/99_test.sol": {
-			"keccak256": "0xc501929cf0732ecfc724eb2c4c1bde7192d449f17ae6eb6a7bbc5f7ca8c55707",
+			"keccak256": "0x9941e765407d8ddc5568c6e3803588491ed01b07f8866711098ba6f3b5f104fa",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3774a4c1e6485de443fc3632515ed79b2ecfb08e97d155085c6873221a015e0d",
-				"dweb:/ipfs/QmTGmMRRi9SD53gt8iduC5WzuKd48wVYuNHG8jgcpubZ6h"
+				"bzz-raw://69b4cfaf20cc40dcab6d967e08c2e5387bd1528ded60f103bc0626a471f90500",
+				"dweb:/ipfs/QmdpAnrtwYVjUWonV9a3LX4y9gMwZjeyQ5jiM4vtJwJaYu"
 			]
 		}
 	},
